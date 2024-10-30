@@ -4,10 +4,10 @@ import { ListaComponent } from "./components/lista/lista.component";
 import { NgFor } from '@angular/common';
 import { DataComponent } from "./components/data/data.component";
 import { ButtonComponent } from "./components/button/button.component";
-import { ToggleComponent } from "./toggle/toggle.component";
+import { ToggleComponent } from "./components/toggle/toggle.component";
 import { DataDisplayComponent } from "./data-display/data-display.component";
-import { FormComponent } from "./form/form.component";
-import { UserDetailComponent } from "./user-detail/user-detail.component";
+import { FormComponent } from "./components/form/form.component";
+import { UserDetailComponent } from "./components/user-detail/user-detail.component";
 
 @Component({
   selector: 'app-root',
