@@ -10,11 +10,12 @@ import { FormComponent } from "./components/form/form.component";
 import { UserDetailComponent } from "./components/user-detail/user-detail.component";
 import { ChildComponent } from "./components/child/child.component";
 import { ParentsComponent } from "./components/parents/parents.component";
+import { FilterComponentComponent } from "./filter-component/filter-component.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ListaComponent, NgFor, DataComponent, ButtonComponent, ToggleComponent, DataDisplayComponent, FormComponent, UserDetailComponent, ChildComponent, ParentsComponent],
+  imports: [RouterOutlet, ListaComponent, NgFor, DataComponent, ButtonComponent, ToggleComponent, DataDisplayComponent, FormComponent, UserDetailComponent, ChildComponent, ParentsComponent, FilterComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

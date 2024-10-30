@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="searchTerm" placeholder="Filtrar por nome" />
+<ul>
+  <li *ngFor="let user of users | filter: searchTerm">
+    {{ user.name }} - {{ user.age }} anos
+  </li>
+</ul>
