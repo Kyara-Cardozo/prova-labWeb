@@ -1,0 +1,7 @@
+<h2>Item Selecionado: {{ selectedItem }}</h2>
+<div *ngFor="let item of items">
+  <app-child
+    [item]="item"
+    (itemClicked)="onItemClicked($event)">
+  </app-child>
+</div>

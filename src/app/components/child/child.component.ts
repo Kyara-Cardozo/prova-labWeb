@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class ChildComponent {
 
+  @Input()
+  item!: string;
+  @Output() itemClicked = new EventEmitter<string>();
+
+  onItemClicked() {
+    this.itemClicked.emit(this.item);
+    console.log('cliclou:', this.item);
+  }
 }
