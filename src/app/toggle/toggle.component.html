@@ -1,0 +1,6 @@
+<div>
+  <button (click)="toggleMessage()">
+    {{ showMessage ? 'Ocultar Mensagem' : 'Mostrar Mensagem' }}
+  </button>
+  <p *ngIf="showMessage">Mensagem visível!</p> <!-- Mensagem exibida se showMessage for verdadeiro -->
+</div>
